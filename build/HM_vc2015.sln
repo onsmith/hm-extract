@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 14
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TAppDecoder", "vc2015\TAppDecoder_vc2015.vcxproj", "{A7A515D9-E917-4706-BD5B-57DC6C78D612}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TAppEncoder", "vc2015\TAppEncoder_vc2015.vcxproj", "{D759E4E1-D33A-4483-B57B-0FD248E022FE}"
@@ -20,6 +22,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TLibDecoderAnalyser", "vc2015\TLibDecoderAnalyser_vc2015.vcxproj", "{68C1251A-55D8-47C9-9052-62F785BD437A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TAppMctsExtractor", "vc2015\TAppMCTSExtractor_vc2015.vcxproj", "{9BF48911-8901-425A-9329-C843C6FCBAB8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TAppStreamExtractor", "vc2015\TAppStreamExtractor.vcxproj", "{BF1CA905-64BD-4BCD-AF1B-F33DD4FFF6D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,8 +113,19 @@ Global
 		{9BF48911-8901-425A-9329-C843C6FCBAB8}.Release|Win32.Build.0 = Release|Win32
 		{9BF48911-8901-425A-9329-C843C6FCBAB8}.Release|x64.ActiveCfg = Release|x64
 		{9BF48911-8901-425A-9329-C843C6FCBAB8}.Release|x64.Build.0 = Release|x64
+		{BF1CA905-64BD-4BCD-AF1B-F33DD4FFF6D3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BF1CA905-64BD-4BCD-AF1B-F33DD4FFF6D3}.Debug|Win32.Build.0 = Debug|Win32
+		{BF1CA905-64BD-4BCD-AF1B-F33DD4FFF6D3}.Debug|x64.ActiveCfg = Debug|x64
+		{BF1CA905-64BD-4BCD-AF1B-F33DD4FFF6D3}.Debug|x64.Build.0 = Debug|x64
+		{BF1CA905-64BD-4BCD-AF1B-F33DD4FFF6D3}.Release|Win32.ActiveCfg = Release|Win32
+		{BF1CA905-64BD-4BCD-AF1B-F33DD4FFF6D3}.Release|Win32.Build.0 = Release|Win32
+		{BF1CA905-64BD-4BCD-AF1B-F33DD4FFF6D3}.Release|x64.ActiveCfg = Release|x64
+		{BF1CA905-64BD-4BCD-AF1B-F33DD4FFF6D3}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9E23DE1-654B-497C-8A31-BE42A8020CB9}
 	EndGlobalSection
 EndGlobal
