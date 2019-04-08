@@ -24,10 +24,10 @@
     <ClCompile Include="..\..\source\App\TAppStreamExtractor\Extractor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\App\TAppStreamExtractor\NALUnit.cpp">
+    <ClCompile Include="..\..\source\App\TAppStreamExtractor\ionalu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\App\TAppStreamExtractor\InputBitStream.cpp">
+    <ClCompile Include="..\..\source\App\TAppStreamExtractor\iobitstream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,10 +38,10 @@
     <ClInclude Include="..\..\source\App\TAppStreamExtractor\Extractor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\App\TAppStreamExtractor\InputBitStream.h">
+    <ClInclude Include="..\..\source\App\TAppStreamExtractor\ionalu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\App\TAppStreamExtractor\NALUnit.h">
+    <ClInclude Include="..\..\source\App\TAppStreamExtractor\iobitstream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

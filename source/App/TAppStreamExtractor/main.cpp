@@ -32,7 +32,7 @@ int main(int argc, char* argv[]) {
 
   // Calculate and report total execution time
   clock_t executionTime = (clock() - startTime) / CLOCKS_PER_SEC;
-  printf("\n Total Time: %12.3f sec.\n", executionTime);
+  printf("\n Total Time: %12.3f sec.\n", static_cast<double>(executionTime));
 
   return EXIT_SUCCESS;
 }

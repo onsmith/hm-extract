@@ -76,7 +76,9 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\apps\hm-extract\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\source\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -95,7 +97,9 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\apps\hm-extract\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\source\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -117,17 +121,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\source\App\TAppStreamExtractor\iobitstream.cpp" />
     <ClCompile Include="..\..\source\App\TAppStreamExtractor\Extractor.cpp" />
     <ClCompile Include="..\..\source\App\TAppStreamExtractor\ExtractorConfig.cpp" />
-    <ClCompile Include="..\..\source\App\TAppStreamExtractor\InputBitStream.cpp" />
     <ClCompile Include="..\..\source\App\TAppStreamExtractor\main.cpp" />
-    <ClCompile Include="..\..\source\App\TAppStreamExtractor\NALUnit.cpp" />
+    <ClCompile Include="..\..\source\App\TAppStreamExtractor\ionalu.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\source\App\TAppStreamExtractor\iobitstream.h" />
     <ClInclude Include="..\..\source\App\TAppStreamExtractor\Extractor.h" />
     <ClInclude Include="..\..\source\App\TAppStreamExtractor\ExtractorConfig.h" />
-    <ClInclude Include="..\..\source\App\TAppStreamExtractor\InputBitStream.h" />
-    <ClInclude Include="..\..\source\App\TAppStreamExtractor\NALUnit.h" />
+    <ClInclude Include="..\..\source\App\TAppStreamExtractor\ionalu.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="TAppCommon_vc2015.vcxproj">
