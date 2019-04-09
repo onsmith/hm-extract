@@ -72,7 +72,7 @@ static void consumeStartCode(istream& input) {
  * Static function to read nal unit bytes from an istream into a vector
  */
 static void readNaluBytes(istream& input, vector<uint8_t>& output) {
-  while (peekBytes(input, 3) > 2 || input.eof()) {
+  while (!input.eof() && peekBytes(input, 3) > 2) {
     output.push_back(input.get());
   }
 }
@@ -119,9 +119,7 @@ static void convertPayloadToRBSP(vector<uint8_t>& data, bool isVclNalUnit) {
       assert(*it_read <= 0x03);
     }
 
-    if (*it_read == 0x00) {
-      zeroCount++;
-    }
+    zeroCount = (*it_read == 0x00) ? zeroCount + 1 : 0;
 
     *it_write = *it_read;
   }
